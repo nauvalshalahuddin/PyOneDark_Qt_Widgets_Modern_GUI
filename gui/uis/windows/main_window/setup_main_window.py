@@ -146,11 +146,11 @@ class SetupMainWindow:
     # Get sender() function when btn is clicked
     # ///////////////////////////////////////////////////////////////
     def setup_btns(self):
-        if self.ui.title_bar.sender() != None:
+        if self.ui.title_bar.sender() is not None:
             return self.ui.title_bar.sender()
-        elif self.ui.left_menu.sender() != None:
+        elif self.ui.left_menu.sender() is not None:
             return self.ui.left_menu.sender()
-        elif self.ui.left_column.sender() != None:
+        elif self.ui.left_column.sender() is not None:
             return self.ui.left_column.sender()
 
     # SETUP MAIN WINDOW WITH CUSTOM PARAMETERS
